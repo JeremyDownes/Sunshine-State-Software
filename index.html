@@ -2,8 +2,20 @@
 <html>
 <head>
 	<title>Sunshine State Software LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        $("nav").css({"position":"sticky","top":"7vw"});
+      });
+      $(window).resize(function(){
+        location.reload();
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -13,37 +25,65 @@
       <div class="sun-effect"></div>
       <img src="resources/images/SunshineStateSoftwareLogoTop.png" class="overlay">
     </div>
-    <div class="header-container">
+    <div class="title-container">
       <h1>Sunshine State Software</h1>
-      <h3>Strategic Software Solutions</h3>
-      <h5>For Serious Startups to Enterprise Organizations</h5>
     </div>
   </header>
 
   <main>
-    <div class="jumbotron">
-      <section class="intro">
-        Drawing on our two decades of programming experience we will leverage the use of multiple technologies to design and implement a customized solution that seemlessly integrates your business with your digital presence.
-    </section>
+    <section class="intro">
+      <h3>Strategic Software Solutions</h3>
+      <h5>From Startup to Enterprise Organization</h5>
+        <div class="jumbotron">
+          <div>      
+          <p>Software can seem scary. <br/> We're here to help.
+          <a href="#contact"><button>Start here</button></a></p>
+          </div>
+          <div></div>
+        </div>
+      </section>
   	</div> 
   <nav>
     <ul>
-      <li>Professional Services Integration and Automation</li>
-      <li>Application Design and Authoring</li>
-      <li>Web and Online Presence Design</li>
-      <li>Graphic Design and Marketing</li>
-      <li>Digital Strategy Consultation</li>
+      <li><a href="#PSA">Professional Services Integration and Automation<div class="mask"><img src="resources/images/psa.png"></div></a></li>
+      <li><a href="#APP">Application Design and Authoring<div class="mask"><img src="resources/images/app.png"></div></a></li>
+      <li><a href="#WEB">Online Presence and Web Design Services<div class="mask"><img src="resources/images/web.png"></div></a></li>
+      <li><a href="#MGD">Marketing and Graphic Design Services<div class="mask"><img src="resources/images/mgd.png"></div></a></li>
+      <li><a href="#DSC">Digital Strategy Consultation Services<div class="mask"><img src="resources/images/dsc.png"></div></a></li>
     </ul>
   </nav>
 
-  <section class="PSA">
+  <section id="PSA">
     <h1>Automation Services</h1>
-    <h2>We utilize industry specific automation tools and customize their integrations into your workflow</h2>
+    <h2>We utilize industry specific automation tools and customize their integration to your workflow</h2>
 
     <p>Our automation integration service begin with an in depth consultation with one of our Solutions Engineers. Over the course of several observation sessions and interviews with you and your critical staff we will develop a strategy for implementing our technologies and those of our trusted industry leading partners
     in order to best serve to streamline and automate your workflow. Our solutions are ROI oriented. We are not salespeople and will not push to implement 
     technologies that are not proven to bring value.
     </p>
+  </section>
+
+  <section id="APP">
+    <h1>Application Design</h1>
+    <h2>We can build out your custom applications in a matter of weeks</h2>
+
+    <p>Android, IOS, and web native applications can provide your business with a platform to elicit engagement from you current and prospective customers in a way that traditional web sites cannot. A well designed application can make all the difference between success and failure of promotions and product launches by both connecting to your core target audience and by generating a buzz that you can translate into new business. It can provide your employees a means of connecting with customers and with other, manage sales and update inventory, and provide you with a variety of metrics. Our developers have the capability to bring together all of these aspects in an unique and appealing package with an industry leading turnaround time and our flexible development contracts can ensure your applications the longevity and flexibility needed in a rapidly shifting marketplace.</p>
+  </section>
+
+  <section id="WEB">
+    <h1>Web Design</h1>
+    <h2>Your online presence defined by YOU!</h2>
+    <p>Your online presence is more than just a landing page. Your web site is often the first contact that your patrons have with your organization. We all know first impressions count which is why it is so important that your online presence reflects your brand's core principles and purpose. A robust online presence can inspire confidence in a company, organization, or brand and become a dynamic resource with which to engage a desired market. We can help you to navigate the intricacies of creating a meaningful presence on the modern web beginning with a proprietary framework that will allow your organization to manage it's own home page through an intuitive content mangagement interface. We can help you develop strategies designed to hone your presence on social media outlets to grow your brand and interact with your key demographic and help you get started with the most exiting new target marketing technologies. </p>  
+  </section>
+
+  <section id="MGD">
+    <h1>Graphic Design and Marketing</h1>
+    <h2>Sometimes appearances are everything</h2>
+    <p>One thing the most successful organizations all have in common is top-level branding. Logos, slogans, colors, jingles, and even fonts can all come together to form a conhesive image of your organization in the minds of the public. Our marketing and design professionals and our partners are masters at knowing precisely how all of these aspects can effect the way that consumers view your brand. We can design anything from a simple corporate logo to a top-down multi-tiered marketing strategy encompassing multiple media outlets. Continuity is key and we will help ensure that the marketing across all of the platforms you chose to utilize is imparting a consistant message about your brand.</p>
+  </section>
+
+  <section >
+    
   </section>
   </main>
   <footer>
